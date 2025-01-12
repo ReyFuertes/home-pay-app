@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BadgeModule } from 'primeng/badge';
+import { OverlayPanelModule } from 'primeng/overlaypanel';
 
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 
@@ -13,7 +14,8 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    BadgeModule
+    BadgeModule,
+    OverlayPanelModule
   ],
   exports: [TopNavComponent],
   providers: [],

@@ -1,0 +1,91 @@
+@import "src/styleguide/index.scss";
+
+.top-nav-container {
+  background-color: #f1f1f1;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px;
+
+    >div {
+      display: flex;
+      align-items: center;
+
+      span {
+        &:first-child {
+          margin-left: 10px;
+        }
+
+        &:nth-child(2) {
+          margin-left: 15px;
+        }
+
+        &:nth-child(3) {
+          margin-left: 8px;
+        }
+
+        &.ellipse,
+        &.account,
+        &.menu {
+          font-size: 28px;
+          color: #333333;
+          
+
+          &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+          }
+        }
+      }
+
+      i {
+        font-size: 24px;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    width: 950px;
+    margin: 0 auto;
+    min-height: 95px;
+  }
+}
+
+::ng-deep {
+  hp-top-nav {
+    .p-badge {
+      font-size: 0.75rem;
+      min-width: 1.2rem;
+      height: 1.2rem;
+      line-height: 1.2rem;
+    }
+
+    .avatar {
+      margin-right: 15px;
+      min-width: 110px;
+
+      img {
+        border-radius: 50%;
+        position: absolute;
+        margin-top: 35px;
+      }
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+}

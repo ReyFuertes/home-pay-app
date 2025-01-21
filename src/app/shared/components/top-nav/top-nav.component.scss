@@ -1,13 +1,21 @@
 @import "src/styleguide/index.scss";
 
 .top-nav-container {
-  background-color: #f1f1f1;
+  background-color: var(--colour-element-white-100);
 
   .header {
     display: flex;
     justify-content: space-between;
-    background-color: #ffffff;
-    padding: 10px;
+    background-color: var(--colour-element-white-bg-300);
+    padding: 15px 10px 10px;
+
+    span {
+      cursor: pointer;
+
+      &:hover {
+        color: var(--colour-element-gray-100);
+      }
+    }
 
     >div {
       display: flex;
@@ -30,8 +38,7 @@
         &.account,
         &.menu {
           font-size: 28px;
-          color: #333333;
-
+          color: var(--colour-element-black-300);
 
           &:hover {
             cursor: pointer;
@@ -53,16 +60,25 @@
 
   .content {
     display: flex;
-    width: 950px;
+    width: 100%;
     margin: 0 auto;
     min-height: 95px;
+    background-image: linear-gradient(95.14deg, var(--colour-element-green-100) 1.56%, var(--colour-element-green-300) 100%);
+
+    >div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 1024px;
+      margin: 0 auto;
+    }
   }
 }
 
 ::ng-deep {
   .top-nav-overlay.p-overlaypanel {
     .p-overlaypanel-content {
-      padding: 15px;
+      padding: 15px 20px;
       min-width: 110px;
 
       >div {
@@ -70,14 +86,21 @@
         flex-direction: column;
         align-items: flex-start;
 
-        span {
+        >div {
           display: flex;
+          flex-direction: row;
           align-items: center;
-          min-height: 30px;
 
-          &:hover {
-            cursor: pointer;
-            opacity: 0.8;
+          span {
+            display: flex;
+            align-items: center;
+            min-height: 30px;
+            margin-right: 8px;
+
+            &:hover {
+              cursor: pointer;
+              opacity: 0.8;
+            }
           }
         }
       }
@@ -94,21 +117,23 @@
 
     .avatar {
       margin-right: 35px;
-      min-width: 110px;
+      min-width: 130px;
 
       img {
         border-radius: 50%;
         position: absolute;
-        margin-top: 35px;
+        margin-top: -15px;
       }
     }
 
     .title {
       display: flex;
       align-items: center;
+      color: var(--colour-element-white-100);
 
-      h2 {
+      h3 {
         margin: 0;
+        font-size: 36px;
       }
     }
   }

@@ -1,1 +1,8 @@
 <router-outlet></router-outlet>
+<p-sidebar [(visible)]="sidebarVisibility" (onHide)="applicationService.setSidebarVisibility(false)"
+  [closeOnEscape]="true" [showCloseIcon]="false" [modal]="true" [transitionOptions]="'221ms'">
+  <h3>Sidebar</h3>
+  <p>
+    Lorem ipsum dolor sit amet...
+  </p>
+</p-sidebar>

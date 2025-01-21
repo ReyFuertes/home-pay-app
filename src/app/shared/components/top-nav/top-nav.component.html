@@ -1,20 +1,28 @@
 <div class="top-nav-container">
   <div class="header">
-    <span class="material-symbols-rounded menu">menu</span>
+    <span class="material-symbols-rounded menu" (click)="onShowSidebar()">menu</span>
     <div>
       <i class="pi pi-bell" pBadge value="2" severity="danger"></i>
       <span class="material-symbols-rounded account">account_circle</span>
       <span (click)="op?.toggle($event)" class="material-symbols-rounded ellipse">more_vert</span>
       <p-overlayPanel #op styleClass="top-nav-overlay">
         <div class="options">
-          <span>Settings</span>
-          <span>Logout</span>
+          <div>
+            <span class="material-symbols-rounded">settings</span>
+            <span>Settings</span>
+          </div>
+          <div>
+            <span class="material-symbols-rounded">logout</span>
+            <span>Logout</span>
+          </div>
         </div>
       </p-overlayPanel>
     </div>
   </div>
   <div class="content">
-    <ng-content select=".avatar"></ng-content>
-    <ng-content select=".title"></ng-content>
+    <div>
+      <ng-content select=".avatar"></ng-content>
+      <ng-content select=".title"></ng-content>
+    </div>
   </div>
 </div>

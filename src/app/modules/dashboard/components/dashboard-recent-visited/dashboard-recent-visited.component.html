@@ -1,0 +1,8 @@
+<div class="dashboard-recent-visited-container">
+  <div class="header">Recently visited</div>
+  <div class="visitors-container">
+    <div *ngFor="let visited of recentVisited">
+      <div>{{ visited?.name }}</div>
+    </div>
+  </div>
+</div>

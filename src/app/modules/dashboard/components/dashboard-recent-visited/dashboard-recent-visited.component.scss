@@ -1,0 +1,48 @@
+@import "src/styleguide/index.scss";
+
+.dashboard-recent-visited-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 930px;
+  margin: 20px auto;
+
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+    color: var(--colour-element-gray-100);
+  }
+
+  .visitors-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    justify-content: center;
+
+    >div {
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-radius: 50%;
+      height: 110px;
+      width: 110px;
+      background-color: var(--colour-element-green-100);
+      color: var(--colour-element-white-100);
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 0 0.2rem var(--colour-element-green-500);
+      }
+    }
+  }
+}

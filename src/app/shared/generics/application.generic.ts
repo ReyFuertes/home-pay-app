@@ -1,12 +1,10 @@
-import { Directive, OnDestroy } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Directive } from '@angular/core';
+
+import { GenericDestroy } from './destroy.generic';
 
 @Directive()
-export class GenericDestroy implements OnDestroy {
-  public $unsubscribe = new Subject<void>();
-
-  public ngOnDestroy(): void {
-    this.$unsubscribe.next();
-    this.$unsubscribe.complete();
+export class GenericApplication extends GenericDestroy {
+  constructor() {
+    super();
   }
 }

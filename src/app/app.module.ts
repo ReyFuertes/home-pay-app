@@ -7,6 +7,7 @@ import { SidebarModule } from 'primeng/sidebar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { reducers } from './store';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { AppComponent } from './app.component';
     SidebarModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot(reducers),
     EffectsModule.forRoot([])
   ],
   providers: [],

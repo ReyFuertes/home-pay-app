@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { ApplicationService } from 'src/app/modules/services/application.service';
+import { ApplicationService } from 'src/app/services/application.service';
 
 @Component({
   selector: 'hp-top-nav',

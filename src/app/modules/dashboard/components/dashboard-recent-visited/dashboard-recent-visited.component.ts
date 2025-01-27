@@ -22,6 +22,9 @@ export class DashboardRecentVisitedComponent implements OnInit {
     }, {
       id: '6634bcdc-08ce-4b37-853f-5ee73ba75d68',
       name: 'Unit 4421'
+    }, {
+      id: '6634bcdc-08ce-4b37-853f-5ee73ba75d68',
+      name: 'Unit 5421'
     }];
   }
 

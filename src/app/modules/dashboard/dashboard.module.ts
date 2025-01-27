@@ -8,6 +8,7 @@ import { DashboardPageComponent } from './components/dashboard-page/dashboard-pa
 import { SharedModule } from '../../shared/shared.module';
 import { DashboardChartComponent } from './components/dashboard-chart/dashboard-chart.component';
 import { DashboardRecentVisitedComponent } from './components/dashboard-recent-visited/dashboard-recent-visited.component';
+import { DashboardApplicationComponent } from './components/dashboard-application/dashboard-application.component';
 
 const routes: Routes = [
   {
@@ -24,7 +25,8 @@ const routes: Routes = [
     DashboardContainerComponent,
     DashboardPageComponent,
     DashboardChartComponent,
-    DashboardRecentVisitedComponent
+    DashboardRecentVisitedComponent,
+    DashboardApplicationComponent
   ],
   imports: [
     CommonModule,

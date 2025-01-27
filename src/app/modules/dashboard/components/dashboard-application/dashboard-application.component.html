@@ -1,0 +1,13 @@
+<div class="dashboard-application-container">
+  <div class="header">Applications</div>
+  <div class="application-container">
+    <ng-container *ngFor="let application of applications">
+      <div class="application">
+        <div>
+          <span class="material-symbols-rounded">{{ application?.icon }}</span>
+        </div>
+        <div>{{ application?.name }}</div>
+      </div>
+    </ng-container>
+  </div>
+</div>
